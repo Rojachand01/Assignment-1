@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Explore Articles</h1>
+      <p>Find content tailored to your needs.</p>
+    </header>
+    <main>
+      <div class="search-box">
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="Search by keyword..." 
+          aria-label="Search articles">
+        <button id="searchBtn">🔍</button>
+      </div>
+      <div class="filters">
+        <label for="filter">Category:</label>
+        <select id="filter" aria-label="Filter by category">
+          <option value="all">All</option>
+          <option value="category1">Technology</option>
+          <option value="category2">Design</option>
+        </select>
+      </div>
+      <div id="results" class="results">
+        <p class="placeholder">Start typing to see results...</p>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
